@@ -1,0 +1,37 @@
+
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+        id 'java'
+        id 'war'
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly('jakarta.servlet:jakarta.servlet-api:6.0.0')
+    implementation('jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0')
+    implementation('javax.servlet:jstl:1.2')
+    implementation 'com.google.guava:guava:31.1-jre'
+}
+
+war {
+    archiveFileName = '2lab.war'
+}
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+testing {
+    suites {
+        // Configure the built-in test suite
+        test {
+            // Use JUnit Jupiter test framework
+            useJUnitJupiter('5.9.1')
+        }
+    }
+}

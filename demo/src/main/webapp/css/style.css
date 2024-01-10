@@ -1,0 +1,139 @@
+* {
+    background: brown;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.main-content {
+    margin: 30px;
+}
+
+img {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.table {
+    margin: 0 auto;
+    border: 1px solid #eee;
+    table-layout: fixed;
+    width: 50%;
+}
+
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+
+.table td {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #F7F7F7;
+}
+
+
+#form-lab1 {
+    height: fit-content;
+    padding: 10px;
+    background: #dddddd;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#form-lab1 input, label {
+    background: #F7F7F7;
+}
+
+#form-lab1 input[type=text] {
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    width: 70%;
+    border: none;
+    margin: 5px auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#header {
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#header .inner-content-header {
+    border-radius: 15px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.r {
+    border-radius: 8px;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.7) ;
+}
+
+.error {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    background: border-box;
+}
+
+span{
+    background: #F7F7F7;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+#form-lab1 .btn:hover{
+    background: black;
+    color: #F7F7F7;
+    font-weight: bold;
+}
+
+input[type=text] {
+    margin-top: 5px;
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+.main-content #canvas {
+    background: #F7F7F7;
+}
+
+.btn-back {
+    padding: 10px;
+    background: #F7F7F7;
+    text-underline: none;
+    font-weight: bold;
+}
